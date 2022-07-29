@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="header"><h1>TODO</h1>
+          <button class="theme">
+            <img
+              src="./images/icon-moon.svg"
+              alt="moon icon to apply dark mode"
+            />
+          </button>
+        </div>
+        <form>
+          <label for="new_todo"></label>
+          <input
+            type="text"
+            name="new_todo"
+            id="new_todo"
+            placeholder="Create a new todo..."
+          />
+        </form>
+        <ul>
+          <li>Complete online JavaScript course</li>
+          <li>Jog around th park 3x</li>
+          <li>10 minutes meditation</li>
+          <li>Read for one hour</li>
+          <li>Pick up groceries</li>
+        </ul>
+        <form>
+          <p>items left</p>
+          <input
+            type="radio"
+            name="filter"
+            value="all"
+            id="all"
+            class="filter"
+          />
+          <lable class="filter" for="all">All</lable>
+          <input
+            type="radio"
+            name="filter"
+            value="active"
+            id="active"
+            class="filter"
+          />
+          <label class="filter" for="active">Active</label>
+          <input
+            type="radio"
+            name="filter"
+            value="completed"
+            id="completed"
+            class="filter"
+          />
+          <label class="filter" for="completed">Completed</label>
+          <button class="btn">Clear Completed</button>
+        </form>
+        <p>Drag and drop to reorder list</p>
+      </div>
+      <footer>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.laynamoore.com/" target="_blank">Layna Moore</a>.
+      </footer>
+    </div>
+  </body>
+</html>

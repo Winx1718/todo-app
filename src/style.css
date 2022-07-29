@@ -1,0 +1,23 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../images/bg-desktop-light.jpg);
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+.header {
+  margin: 7rem 0 0 0;
+}
+.theme {
+  background: transparent;
+  border: none;
+}
