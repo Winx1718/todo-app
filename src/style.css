@@ -13,11 +13,32 @@ footer {
 footer a {
   color: hsl(228, 45%, 44%);
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.todo {
+  width: 100%;
+  max-width: 540px;
+  font-size: 1.8rem;
+  font-family: "Josefin Sans", sans-serif;
+}
 .header {
   margin: 7rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 98%);
 }
-.theme {
+.header h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 15px;
+}
+.header button {
   background: transparent;
   border: none;
 }
