@@ -34,7 +34,8 @@
               />
             </button>
           </div>
-          <form>
+          <div class="new">
+            <div class="todo_circle"></div>
             <label for="new_todo"></label>
             <input
               type="text"
@@ -42,42 +43,74 @@
               id="new_todo"
               placeholder="Create a new todo..."
             />
-          </form>
-          <ul>
-            <li>Complete online JavaScript course</li>
-            <li>Jog around th park 3x</li>
-            <li>10 minutes meditation</li>
-            <li>Read for one hour</li>
-            <li>Pick up groceries</li>
-          </ul>
-          <form>
-            <p>items left</p>
-            <input
-              type="radio"
-              name="filter"
-              value="all"
-              id="all"
-              class="filter"
-            />
-            <lable class="filter" for="all">All</lable>
-            <input
-              type="radio"
-              name="filter"
-              value="active"
-              id="active"
-              class="filter"
-            />
-            <label class="filter" for="active">Active</label>
-            <input
-              type="radio"
-              name="filter"
-              value="completed"
-              id="completed"
-              class="filter"
-            />
-            <label class="filter" for="completed">Completed</label>
-            <button class="btn">Clear Completed</button>
-          </form>
+          </div>
+          <div class="todo_list">
+            <ul>
+              <li>
+                <button>
+                  <img src="/images/icon-check.svg" class="todo_circle" />
+                </button>
+                <p>Complete online JavaScript course</p>
+                <button><img src="/images/icon-cross.svg" /></button>
+              </li>
+              <li>
+                <button>
+                  <img src="/images/icon-check.svg" class="todo_circle" />
+                </button>
+                <p>Jog around th park 3x</p>
+                <button><img src="/images/icon-cross.svg" /></button>
+              </li>
+              <li>
+                <button>
+                  <img src="/images/icon-check.svg" class="todo_circle" />
+                </button>
+                <p>10 minutes meditation</p>
+                <button><img src="/images/icon-cross.svg" /></button>
+              </li>
+              <li>
+                <button>
+                  <img src="/images/icon-check.svg" class="todo_circle" />
+                </button>
+                <p>Read for one hour</p>
+                <button><img src="/images/icon-cross.svg" /></button>
+              </li>
+              <li>
+                <button>
+                  <img src="/images/icon-check.svg" class="todo_circle" />
+                </button>
+                <p>Pick up groceries</p>
+                <button><img src="/images/icon-cross.svg" /></button>
+              </li>
+            </ul>
+            <form>
+              <p>items left</p>
+              <input
+                type="radio"
+                name="filter"
+                value="all"
+                id="all"
+                class="filter"
+              />
+              <lable class="filter" for="all">All</lable>
+              <input
+                type="radio"
+                name="filter"
+                value="active"
+                id="active"
+                class="filter"
+              />
+              <label class="filter" for="active">Active</label>
+              <input
+                type="radio"
+                name="filter"
+                value="completed"
+                id="completed"
+                class="filter"
+              />
+              <label class="filter" for="completed">Completed</label>
+              <button class="btn">Clear Completed</button>
+            </form>
+          </div>
         </div>
         <p>Drag and drop to reorder list</p>
       </div>

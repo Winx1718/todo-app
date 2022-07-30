@@ -6,6 +6,22 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+ol,
+ul {
+  list-style: none;
+}
+button {
+  background: transparent;
+  border: none;
+}
+li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #e3e4f1;
+  padding: 2rem 2.4rem;
+}
 footer {
   font-size: 11px;
   text-align: center;
@@ -18,11 +34,11 @@ footer a {
   flex-direction: column;
   align-items: center;
   position: relative;
+  font-size: 18px;
 }
 .todo {
   width: 100%;
   max-width: 540px;
-  font-size: 1.8rem;
   font-family: "Josefin Sans", sans-serif;
 }
 .header {
@@ -34,11 +50,40 @@ footer a {
 }
 .header h1 {
   font-weight: bold;
-  font-size: 4rem;
   line-height: 4rem;
   letter-spacing: 15px;
 }
-.header button {
-  background: transparent;
+
+.new {
+  width: 100%;
+  background: white;
+  padding: 2rem 2.4rem;
+  border-radius: 5px;
+  border: 1px solid #e3e4f1;
+  display: flex;
+  align-items: center;
+  margin-top: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+.new input {
   border: none;
+  line-height: 2rem;
+  flex: 1 0;
+  margin-left: 2rem;
+  background: transparent;
+}
+.todo_circle {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e3e4f1;
+  border-radius: 50%;
+  background: transparent;
+}
+.todo_list {
+  border-top: 1px solid #e3e4f1;
+  border-left: 1px solid #e3e4f1;
+  border-right: 1px solid #e3e4f1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
 }
